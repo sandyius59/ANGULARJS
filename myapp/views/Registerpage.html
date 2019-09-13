@@ -1,0 +1,60 @@
+<div class="container" style="width:550px">
+    <div style="text-align:center;color:blue">
+        <h3><b>User Registraion Form</b></h3>
+    </div>
+    <!-- <div ng-controller="ContactController"> -->
+    <form role="form" name="userForm" class="well" ng-hide="ifSearchUser">
+        <!-- First name -->
+        <div class="form-group">
+            <label for="first"> First Name: </label>
+            <input type="text" id="first" name="first" class="form-control" placeholder="Enter First Name "
+                ng-model="newcontact.first" required>
+        </div>
+        <!-- first name massage -->
+        <!-- <span ng-show="userForm.first.$error.required"> Required! </span> <br /> -->
+        <!-- Last name -->
+        <div class="form-group">
+            <label for="last"> Last Name: </label>
+            <input type="text" id="last" name="last" class="form-control" placeholder="Enter Last Name "
+                ng-model="newcontact.last" required>
+        </div>
+        <!-- last name massage -->
+        <!-- <div ng-show="userForm.last.$error.required"> Required! </div> <br /> -->
+        <!-- email -->
+        <div class="form-group">
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email "
+                ng-model="newcontact.email" Required>
+        </div>
+        <!-- email massage -->
+        <!-- <div style="color:red; " ng-show="userForm.email.$invalid && userForm.email.$dirty">
+            ERROR.<br /> Your email address does not validate
+        </div> -->
+        <!-- password -->
+        <div class="form-group">
+            <label for="password"> Password: </label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password "
+                ng-model="newcontact.password" required>
+        </div>
+        <!-- required massage  -->
+        <!-- <div ng-messages="registerForm.userPassword.$error"><br>
+            <div style="color:dodgerblue" ng-show="userForm.password.$error.required">Required!</div>
+            <br> -->
+        <!-- instructions -->
+        <!-- <div style="color:orange" ng-show="!userForm.password.$valid">Password should be at least 8
+                characters
+                long and should contain one number,one character and one special
+                character
+            </div> -->
+        <!-- </div>
+        <div style="color: green" ng-show="userForm.password.$valid">Yas</div>
+        <br> -->
+        <center>
+            <input style="text-align:center;color:blue" type="button" class="submit" ng-click="saveContact()"
+                class="submit" value="Submit">
+
+
+        </center>
+    </form>
+</div>
+</div>

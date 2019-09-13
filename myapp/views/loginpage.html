@@ -1,0 +1,44 @@
+<div class="container" style="width:550px">
+    <div style="text-align:center;color:blue">
+        <h3><b>Login</b></h3>
+    </div>
+    <!-- <div ng-controller="ContactController"> -->
+    <form role="form" class="well" name="userForm" novalidate>
+        <!-- email -->
+        <div class="form-group">
+            <label for="email"> Email: </label>
+            <input type="email" id="email" class="form-control" placeholder="Enter Email " ng-model="newcontact.email"
+                required>
+            <!-- error massage -->
+            <!-- <div style="color:red; " ng-show="userForm.email.$invalid && userForm.email.$dirty">
+            ERROR.<br /> Your email address does not validate
+        </div> -->
+        </div>
+        <!-- password -->
+        <div class="form-group">
+            <label for="password"> Password: </label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password "
+                ng-model="newcontact.password" required>
+            <!-- required massage  -->
+            <!-- <div ng-messages="registerForm.userPassword.$error"><br>
+            <div style="color:dodgerblue" ng-show="userForm.password.$error.required">Required!</div>
+            <br> -->
+            <!-- instructions -->
+            <!-- <div style="color:orange" ng-show="!userForm.password.$valid">Password should be at least 8
+                        characters
+                        long and should contain one number,one character and one special
+                        character
+                    </div> -->
+        </div>
+        <!-- <div style="color: green" ng-show="userForm.password.$valid">Yas</div>
+
+    </div> -->
+        <br>
+        <center>
+            <input type="button" class="submit" ng-click="saveContact()" value="Submit">
+            <a ng-href="#!/register"><input style="text-align:center;color:blue" type="button" class="register"
+                    value="Register"></a>
+        </center>
+</div>
+</form>
+</div>
