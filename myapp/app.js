@@ -1,3 +1,17 @@
+/**********************************************************************************
+ * @Execution : default node : cmd> app.js
+ *
+ *
+ * @Purpose : to create loging and registration form
+ *
+ * @description : to create rest api using angular js
+ *
+ * @overview : fundoo application
+ * @author : sandeep kumar maurya <sandeepkumaraj58@gmail.com>
+ * @version : 1.0
+ * @since : 13-sat-2019
+ *
+ **************************************************************************************/
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider

@@ -1,4 +1,19 @@
 <?php
+/**********************************************************************************
+ * @Execution : default node : cmd> User.php
+ *
+ *
+ * @Purpose : to create loging and registration form
+ *
+ * @description : to create rest api using codeiniter and angular js
+ *
+ * @overview : fundoo application
+ * @author : sandeep kumar maurya <sandeepkumaraj58@gmail.com>
+ * @version : 1.0
+ * @since : 10-sat-2019
+ *
+ **************************************************************************************/
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: access");
 header("Access-Control-Allow-Methods: GET");
@@ -6,7 +21,11 @@ header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json');
 
 defined('BASEPATH') or exit('No direct script access allowed');
-
+/**
+ * @desc to create loging and signup
+ * @param null
+ * @return null
+ */
 class User extends CI_Controller
 {
 
@@ -15,6 +34,11 @@ class User extends CI_Controller
         parent::__construct();
         $this->load->model('usermodel');
     }
+    /**
+     * @desc to create login
+     * @param null
+     * @return null
+     */
     public function login()
     {
         $userData = json_decode(file_get_contents("php://input"));
@@ -41,6 +65,11 @@ class User extends CI_Controller
         }
 
     }
+    /**
+     * @desc to create loging and signup
+     * @param null
+     * @return null
+     */
 
     public function register()
     {
